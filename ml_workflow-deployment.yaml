@@ -1,0 +1,52 @@
+###
+### A complete description of a Prefect Deployment for flow 'ml-workflow'
+###
+name: ml_workflow_bank_churn
+description: null
+version: 5ab76bc07471372eb60aa1469844a895
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+work_pool_name: DC-work-pool
+tags:
+- dev
+parameters: {}
+schedule: null
+schedules: []
+is_schedule_active: null
+infra_overrides: {}
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: ml-workflow
+manifest_path: null
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  _block_document_id: 32f51283-7f99-4bec-9f78-aad042c9fa40
+  _block_document_name: anonymous-3cfa57d3-84df-4e96-8339-f596c8b315f2
+  _is_anonymous: true
+  block_type_slug: process
+  _block_type_slug: process
+storage: null
+path: C:\Repository\GitHub\ML-Workflow-Orchestration-With-Prefect
+entrypoint: main.py:ml_workflow
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    filename:
+      title: filename
+      default: train.csv
+      position: 0
+      type: string
+  required: null
+  definitions: null
+timestamp: '2024-03-14T17:32:23.266177+00:00'
+triggers: []
+enforce_parameter_schema: null
